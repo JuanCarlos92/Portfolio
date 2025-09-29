@@ -1,0 +1,131 @@
+/* ============================= */
+/* Sección Stack Tecnológico     */
+/* ============================= */
+#stackTecnologicos {
+    background: linear-gradient(to bottom, #000000, #171717);
+    padding: 2rem;
+    text-align: center;
+}
+
+#stackTecnologicos .titulo {
+    font-family: 'Inter Tight', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+    #stackTecnologicos .titulo {
+        font-size: 32px;
+    }
+}
+
+#stackTecnologicos .descripcion {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: var(--font-weight-light);
+    font-size: 24px;
+    line-height: 34px;
+    color: #bbb;
+    max-width: 900px;
+    margin: 0 auto 5rem;
+}
+
+@media (max-width: 900px) {
+    #stackTecnologicos .descripcion {
+        font-size: 20px;
+    }
+}
+
+/* ============================= */
+/* Iconos del Stack              */
+/* ============================= */
+#stackTecnologicos .icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+    background: none;
+    width: auto;
+    height: auto;
+}
+
+#stackTecnologicos .icono i {
+    font-size: 36px;
+    color: #9dfaff;
+}
+
+/* ============================= */
+/* Cards                         */
+/* ============================= */
+#stackTecnologicos .card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#stackTecnologicos .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* ============================= */
+/* Grid responsivo               */
+/* ============================= */
+/* 960px – 1174px */
+@media (max-width: 1174px) and (min-width: 961px) {
+    #stackTecnologicos .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+    }
+
+    #stackTecnologicos .grid>.card {
+        grid-column: auto;
+    }
+
+    #stackTecnologicos .grid>.card:nth-of-type(4n) {
+        grid-column: 1 / -1;
+    }
+}
+
+/* <=960px: móviles */
+@media (max-width: 960px) {
+    #stackTecnologicos .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    #stackTecnologicos .grid>.card {
+        grid-column: auto;
+    }
+}
+
+/* ============================= */
+/* Hover / efectos               */
+/* ============================= */
+#stackTecnologicos .grid .card:hover {
+    border-color: rgba(93, 226, 255, 0.4);
+    box-shadow: 0 0 20px rgba(93, 226, 255, 0.4);
+}
+
+#stackTecnologicos .grid .card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#stackTecnologicos .grid .card p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #ddd;
+}

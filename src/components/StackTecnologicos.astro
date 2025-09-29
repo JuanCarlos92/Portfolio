@@ -1,0 +1,20 @@
+---
+import { stackTecnologicos } from '../data/stackTecnologicos.js';
+---
+
+<section id="stackTecnologicos">
+  <h3 class="titulo">Stack Tecnológico</h3>
+  <p class="descripcion">
+    Lenguajes de programación, frameworks y herramientas que utilizo en desarrollo backend, frontend, móviles y en la nube.
+  </p>
+
+  <div class="grid">
+    {stackTecnologicos.map((s) => (
+      <div class="card">
+        <span class="icono"><i class={s.icono}></i></span>
+        <h4>{s.nombre}</h4>
+        <p>{s.descripcion}</p>
+      </div>
+    ))}
+  </div>
+</section>

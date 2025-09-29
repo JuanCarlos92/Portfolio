@@ -1,0 +1,141 @@
+/* ============================= */
+/* Header / Barra de navegación  */
+/* ============================= */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+/* Contenido del header: logo y navegación */
+header .contenido-header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Título / Logo */
+header .contenido-header h1 {
+    text-align: center;
+    color: #9dfaff;
+}
+
+/* Menú de navegación */
+header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+/* Hover y enlace activo */
+header .contenido-header nav ul li a:hover,
+header .contenido-header .seleccionado {
+    color: #9dfaff;
+}
+
+/* Iconos de redes sociales */
+header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: 0.5s;
+    font-size: 1.4rem;
+}
+
+header .contenido-header .redes a:hover {
+    color: #9dfaff;
+}
+
+/* header .portfolio-animado-link {
+    display: none;
+} */
+
+/* Icono de menú (hamburguesa) para móvil */
+header #icono-nav {
+    color: #fff;
+    display: none;
+}
+
+/* @media(max-width: 1150px) {
+    header .portfolio-animado-link {
+        display: inline-block;
+        color: #fff;
+        margin-left: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    header .portfolio-animado-link:hover {
+        color: #5de2ff;
+    }
+} */
+
+@media (max-width: 900px) {
+    header nav {
+        display: none;
+    }
+
+    header .contenido-header {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Reordenar elementos solo en móviles */
+    header .contenido-header h1 {
+        order: 1;
+        /* logo primero */
+    }
+
+    header .contenido-header .redes {
+        display: flex;
+        order: 2;
+        /* redes después del logo */
+        margin-left: 15px;
+        gap: 10px;
+    }
+
+    header #icono-nav {
+        display: block;
+        order: 3;
+        /* hamburguesa al final */
+        margin-left: auto;
+        /* empuja hacia la derecha */
+    }
+
+    /* Aparezca el menú de navegación responsivo */
+    header nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    /* Menú de navegación centrado*/
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    /* Separar los elementos de la lista */
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+
+}

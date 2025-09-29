@@ -1,0 +1,98 @@
+---
+import { proyectos } from "../data/proyectos.js";
+---
+
+<section id="proyectos">
+  <h3 class="titulo">Proyectos</h3>
+  <p class="descripcion">
+    Una selección de proyectos destacados que muestran mi trabajo con backend y
+    frontend.
+  </p>
+
+  <div class="cards-marco-movil">
+    <div class="grid">
+      {
+        proyectos.map((p) => (
+          <div class="card" role="group" aria-label={p.nombre}>
+            <div class="card-inner">
+              {/* Lado Apps */}
+              <a
+                href={p.linkApp}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-front"
+              >
+                <div class="img-marco">
+                  <img src={p.appImg} alt={`Vista de la app ${p.nombre}`} />
+                </div>
+                <div class="card-overlay">
+                  <div class="overlay-icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 3h7v7m0-7L10 14"
+                      />
+                    </svg>
+                  </div>
+                  <h3>{p.nombre}</h3>
+                  <p>{p.tecnologias}</p>
+                </div>
+              </a>
+
+              {/* Lado Repos */}
+              <a
+                href={p.linkRepo}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="card-back"
+              >
+                <div class="img-marco">
+                  <img src={p.repoImg} alt={`Repositorio de ${p.nombre}`} />
+                </div>
+                <div class="card-overlay">
+                  <div class="overlay-icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 3h7v7m0-7L10 14"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Repositorio</h3>
+                  <p>{p.tecnologias}</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  {/* Toggle tipo switch (pill) */}
+  <div class="toggle" role="tablist" aria-label="Ver">
+    <button
+      id="btn-apps"
+      class="toggle-btn activo"
+      role="tab"
+      aria-selected="true">Apps</button
+    >
+    <button id="btn-repos" class="toggle-btn" role="tab" aria-selected="false"
+      >Repo</button
+    >
+  </div>
+</section>
