@@ -15,15 +15,15 @@ import { proyectos } from "../data/proyectos.js";
         proyectos.map((p) => (
           <div class="card" role="group" aria-label={p.nombre}>
             <div class="card-inner">
-              {/* Lado Apps */}
+              {/* Lado Repo */}
               <a
-                href={p.linkApp}
+                href={p.linkRepo}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="card-front"
               >
                 <div class="img-marco">
-                  <img src={p.appImg} alt={`Vista de la app ${p.nombre}`} />
+                  <img src={p.repoImg} alt={`Vista de la app ${p.nombre}`} />
                 </div>
                 <div class="card-overlay">
                   <div class="overlay-icon" aria-hidden="true">
@@ -46,15 +46,15 @@ import { proyectos } from "../data/proyectos.js";
                 </div>
               </a>
 
-              {/* Lado Repos */}
+              {/* Lado Apps */}
               <a
-                href={p.linkRepo}
+                href={p.linkApp}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="card-back"
               >
                 <div class="img-marco">
-                  <img src={p.repoImg} alt={`Repositorio de ${p.nombre}`} />
+                  <img src={p.appImg} alt={`Repositorio de ${p.nombre}`} />
                 </div>
                 <div class="card-overlay">
                   <div class="overlay-icon" aria-hidden="true">
@@ -72,7 +72,7 @@ import { proyectos } from "../data/proyectos.js";
                       />
                     </svg>
                   </div>
-                  <h3>Repositorio</h3>
+                  <h3>{p.nombre}</h3>
                   <p>{p.tecnologias}</p>
                 </div>
               </a>
@@ -84,15 +84,28 @@ import { proyectos } from "../data/proyectos.js";
   </div>
 
   {/* Toggle tipo switch (pill) */}
-  <div class="toggle" role="tablist" aria-label="Ver">
+  <!-- <div class="toggle" role="tablist" aria-label="Ver">
     <button
       id="btn-apps"
       class="toggle-btn activo"
       role="tab"
-      aria-selected="true">Apps</button
+      aria-selected="true">Repo</button
     >
     <button id="btn-repos" class="toggle-btn" role="tab" aria-selected="false"
-      >Repo</button
+      >Apps</button
     >
-  </div>
+  </div> -->
+
+{/* Botón provisional "VER MÁS" */}
+<div class="ver-mas-btn-container">
+  <a 
+    href="https://github.com/JuanCarlos92?tab=repositories" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="ver-mas-btn"
+  >
+    VER MÁS
+  </a>
+</div>
+
 </section>

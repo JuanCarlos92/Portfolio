@@ -12,7 +12,7 @@ export const stackTecnologicos = [
   {
     nombre: "Angular",
     icono: "fa-brands fa-angular",
-    descripcion: "Framework frontend para aplicaciones web SPA, con componentes y consumo de endpoints REST."
+    descripcion: "Framework frontend para aplicaciones web, con componentes y consumo APIs REST."
   },
   {
   nombre: "Struts2",
@@ -57,7 +57,7 @@ export const stackTecnologicos = [
   {
   nombre: "Android Flutter",
   icono: "fa-brands fa-android",
-  descripcion: "Desarrollo de apps multiplataforma con Flutter y Dart, incluyendo widgets personalizables y animaciones."
+  descripcion: "Desarrollo de apps multiplataforma con Flutter y Dart, incluyendo widgets y animaciones."
   },
 
 ];

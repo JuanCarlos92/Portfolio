@@ -43,45 +43,45 @@ function sendEmail(event) {
 }
 
 ///// Toggle Apps / Repos y comportamiento de las cards /////
-document.addEventListener("DOMContentLoaded", () => {
-  const btnApps = document.getElementById("btn-apps");
-  const btnRepos = document.getElementById("btn-repos");
-  const cardInners = document.querySelectorAll(".card-inner");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const btnApps = document.getElementById("btn-apps");
+//   const btnRepos = document.getElementById("btn-repos");
+//   const cardInners = document.querySelectorAll(".card-inner");
 
-  if (!btnApps || !btnRepos) return;
+//   if (!btnApps || !btnRepos) return;
 
-  // Estado inicial: modo Apps
-  document.body.classList.add("modo-apps");
-  document.body.classList.remove("modo-repos");
-  btnApps.classList.add("activo");
-  btnApps.setAttribute("aria-selected", "true");
-  btnRepos.setAttribute("aria-selected", "false");
+//   // Estado inicial: modo Apps
+//   document.body.classList.add("modo-apps");
+//   document.body.classList.remove("modo-repos");
+//   btnApps.classList.add("activo");
+//   btnApps.setAttribute("aria-selected", "true");
+//   btnRepos.setAttribute("aria-selected", "false");
 
-  // Click Apps: quitar flip y marcar modo-apps
-  btnApps.addEventListener("click", () => {
-    btnApps.classList.add("activo");
-    btnRepos.classList.remove("activo");
-    btnApps.setAttribute("aria-selected", "true");
-    btnRepos.setAttribute("aria-selected", "false");
+//   // Click Apps: quitar flip y marcar modo-apps
+//   btnApps.addEventListener("click", () => {
+//     btnApps.classList.add("activo");
+//     btnRepos.classList.remove("activo");
+//     btnApps.setAttribute("aria-selected", "true");
+//     btnRepos.setAttribute("aria-selected", "false");
 
-    // El flip (rotación) lo controla la clase .flipped en cada .card-inner
-    cardInners.forEach((c) => c.classList.remove("flipped"));
+//     // El flip (rotación) lo controla la clase .flipped en cada .card-inner
+//     cardInners.forEach((c) => c.classList.remove("flipped"));
 
-    // Clases de modo para controlar overlays mediante CSS
-    document.body.classList.add("modo-apps");
-    document.body.classList.remove("modo-repos");
-  });
+//     // Clases de modo para controlar overlays mediante CSS
+//     document.body.classList.add("modo-apps");
+//     document.body.classList.remove("modo-repos");
+//   });
 
-  // Click Repos: aplicar flip a todas y marcar modo-repos
-  btnRepos.addEventListener("click", () => {
-    btnRepos.classList.add("activo");
-    btnApps.classList.remove("activo");
-    btnRepos.setAttribute("aria-selected", "true");
-    btnApps.setAttribute("aria-selected", "false");
+//   // Click Repos: aplicar flip a todas y marcar modo-repos
+//   btnRepos.addEventListener("click", () => {
+//     btnRepos.classList.add("activo");
+//     btnApps.classList.remove("activo");
+//     btnRepos.setAttribute("aria-selected", "true");
+//     btnApps.setAttribute("aria-selected", "false");
 
-    cardInners.forEach((c) => c.classList.add("flipped"));
+//     cardInners.forEach((c) => c.classList.add("flipped"));
 
-    document.body.classList.add("modo-repos");
-    document.body.classList.remove("modo-apps");
-  });
-});
+//     document.body.classList.add("modo-repos");
+//     document.body.classList.remove("modo-apps");
+//   });
+// });

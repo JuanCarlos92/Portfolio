@@ -74,7 +74,7 @@
 #stackTecnologicos .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+    gap: 1rem;
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -86,7 +86,7 @@
 @media (max-width: 1174px) and (min-width: 961px) {
     #stackTecnologicos .grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 0.6rem;
+        gap: 1rem;
     }
 
     #stackTecnologicos .grid>.card {
@@ -102,11 +102,36 @@
 @media (max-width: 960px) {
     #stackTecnologicos .grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
     #stackTecnologicos .grid>.card {
         grid-column: auto;
+    }
+}
+
+/* <=675px: móviles pequeños */
+@media (max-width: 675px) {
+    #stackTecnologicos .grid>.card {
+        height: 220px;
+    }
+}
+
+/* <=495px: móviles muy pequeños */
+@media (max-width: 495px) {
+    #stackTecnologicos .grid>.card {
+        height: 250px;
+    }
+}
+
+/* <=440px: móviles extra pequeños */
+@media(max-width: 440px) {
+    #stackTecnologicos .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    #stackTecnologicos .grid>.card {
+        height: 180px;
     }
 }
 
