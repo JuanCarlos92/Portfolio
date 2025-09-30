@@ -26,8 +26,9 @@ import { proyectos } from "../data/proyectos.js";
                   <img src={p.repoImg} alt={`Vista de la app ${p.nombre}`} />
                 </div>
                 <div class="card-overlay">
-                  <div class="overlay-icon" aria-hidden="true">
-                    <svg
+                  <i class="fa-solid fa-up-right-from-square overlay-icon" />
+                  {/* <div class="overlay-icon" aria-hidden="true">
+                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -40,7 +41,7 @@ import { proyectos } from "../data/proyectos.js";
                         d="M14 3h7v7m0-7L10 14"
                       />
                     </svg>
-                  </div>
+                  </div> */}
                   <h3>{p.nombre}</h3>
                   <p>{p.tecnologias}</p>
                 </div>
@@ -57,7 +58,8 @@ import { proyectos } from "../data/proyectos.js";
                   <img src={p.appImg} alt={`Repositorio de ${p.nombre}`} />
                 </div>
                 <div class="card-overlay">
-                  <div class="overlay-icon" aria-hidden="true">
+                  <i class="fa-solid fa-up-right-from-square overlay-icon" />
+                  {/* <div class="overlay-icon" aria-hidden="true">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -71,7 +73,7 @@ import { proyectos } from "../data/proyectos.js";
                         d="M14 3h7v7m0-7L10 14"
                       />
                     </svg>
-                  </div>
+                  </div> */}
                   <h3>{p.nombre}</h3>
                   <p>{p.tecnologias}</p>
                 </div>
@@ -96,16 +98,15 @@ import { proyectos } from "../data/proyectos.js";
     >
   </div> -->
 
-{/* Botón provisional "VER MÁS" */}
-<div class="ver-mas-btn-container">
-  <a 
-    href="https://github.com/JuanCarlos92?tab=repositories" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    class="ver-mas-btn"
-  >
-    VER MÁS
-  </a>
-</div>
-
+  {/* Botón provisional "VER MÁS" */}
+  <div class="ver-mas-btn-container">
+    <a
+      href="https://github.com/JuanCarlos92?tab=repositories"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="ver-mas-btn"
+    >
+      VER MÁS
+    </a>
+  </div>
 </section>

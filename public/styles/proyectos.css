@@ -5,7 +5,7 @@
 /* Contenedor principal */
 #proyectos {
     background: #171717;
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
     text-align: center;
 }
 
@@ -39,6 +39,11 @@
     #proyectos .descripcion {
         font-size: 20px;
     }
+}
+@media(max-width:500px){
+  #proyectos .descripcion{
+    text-align: justify;
+  }
 }
 
 /* ============================= */
