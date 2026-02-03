@@ -1,59 +1,6 @@
-<section id="proyectoDestacado" class="proyecto">
-    <!-- Título de la sección -->
-  <h3 class="titulo">Proyecto Destacado</h3>
-  <div class="contenido-proyecto">
-    <!-- Imagen con overlay -->
-    <div class="card-proyecto">
-      <a
-        href="https://tfg-juancarlosfilter.netlify.app"
-        target="_blank"
-        class="card-link"
-      >
-        <div class="card-inner">
-          <img
-            src="./img/mh-web.png"
-            alt="Proyecto destacado"
-            class="card-img"
-          />
-          <div class="card-overlay">
-            <h3>Wiki Monster Hunter</h3>
-            <p>Ver página web</p>
-            <i class="fa-solid fa-up-right-from-square overlay-icon"></i>
-          </div>
-        </div>
-      </a>
-    </div>
-    <!-- Texto a la derecha -->
-    <div class="texto-proyecto">
-      <h2>Wiki Colaborativa</h2>
-      <p>
-        Este proyecto es una <span>wiki</span> especializada en
-        <span>Monster Hunter</span>, desarrollada con
-        <span>Spring Boot</span> y <span>Angular</span>. Implementa
-        autenticación con <span>AWS Cognito</span> (incluyendo login con Google),
-        microservicios registrados en <span>Eureka Server</span>, principios
-        <span>SOLID</span>, uso de <span>DTOs</span> para separar la lógica de negocio
-        y documentación interactiva con <span>Swagger</span>.
-      </p>
-      <p>
-        En el backend se han utilizado <span>Lombok</span> para reducir código repetitivo,
-        <span>JPA/Hibernate</span> para el mapeo de entidades y
-        <span>Postman</span> para la validación de endpoints. Además, se aplicaron
-        <span>patrones de diseño</span> para lograr una arquitectura mantenible y escalable.
-      </p>
-      <p>
-        <span></span>El frontend consume los endpoints mediante services</span>,
-        aplicando un diseño modular con componentes reutilizables y modelos
-        tipados en TypeScript. La interfaz está optimizada con <span>Ionic</span
-        >
-        para ofrecer una experiencia responsiva en dispositivos móviles y escritorio.
-      </p>
-      <p>
-        El despliegue se realizó en <span>AWS</span> utilizando instancias
-        <span>EC2</span> para el backend y <span>RDS</span> como base de datos, con
-        el frontend publicado en <span>Netlify</span>. La gestión del dominio y
-        certificados SSL se configuró con <span>Cloudflare</span>.
-      </p>
-    </div>
-  </div>
-</section>
+---
+import ProyectosDestacadosSlider from "../components/ProyectosDestacadosSlide.jsx";
+---
+
+<!-- Renderizamos el slider React en Astro -->
+<ProyectosDestacadosSlider client:load />
