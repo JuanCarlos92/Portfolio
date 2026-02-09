@@ -1,0 +1,215 @@
+/* ============================= */
+/* Sección Presentación / Inicio */
+/* ============================= */
+#inicio {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    /* capa oscura */
+    url("/Portfolio/img/full.webp") no-repeat center center;
+  /* imagen de fondo */
+  background-size: cover;
+  min-height: 60vh;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+
+
+@media (max-width: 900px) {
+  #inicio {
+    min-height: 30vh;
+
+  }
+  #inicio .extra-text {
+    display: none;
+  }
+
+}
+
+
+/* #inicio .portfolio-btn-container {
+  position: absolute;
+  top: 175px;
+  right: 40px;
+  text-align: center;
+}
+
+#inicio .portfolio-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(93, 226, 255, 0.15);
+  border: 1px solid rgba(93, 226, 255, 0.4);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  animation: glow 2s infinite alternate;
+}
+
+
+.portfolio-btn:hover {
+  background: rgba(93, 226, 255, 0.25);
+  color: #5de2ff;
+  transform: scale(1.08);
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 8px rgba(93, 226, 255, 0.5);
+  }
+
+  to {
+    box-shadow: 0 0 18px rgba(93, 226, 255, 0.9);
+  }
+}
+
+
+#inicio .flecha {
+  position: absolute;
+  top: 110px;
+  right: 280px;
+  font-size: 4.5rem;
+  color: #5de2ff;
+  text-shadow: 0 0 10px rgba(93, 226, 255, 0.7);
+  animation: moverFlecha 1s infinite ease-in-out;
+} 
+
+
+@keyframes moverFlecha {
+  0% {
+    transform: translateX(0) rotate(30deg);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: translateX(-5px) rotate(25deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0) rotate(30deg);
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 1500px) {
+  #inicio .portfolio-btn-container {
+    top: 100px;
+  }
+
+  #inicio .flecha {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+
+  #inicio .flecha,
+  #inicio .portfolio-btn-container {
+    display: none;
+  }
+} */
+
+
+/* ============================= */
+/* Título                        */
+/* ============================= */
+#inicio .titulo {
+  font-family: 'Inter Tight', sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 58px;
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 900px) {
+  #inicio .titulo {
+    font-size: 48px;
+    line-height: 42px;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* ============================= */
+/* Descripción                   */
+/* ============================= */
+#inicio .descripcion {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: var(--font-weight-light);
+  font-size: 24px;
+  line-height: 34px;
+  color: #bbb;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+@media (max-width: 900px) {
+  #inicio .descripcion {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 1rem;
+  }
+}
+
+#inicio .descripcion span {
+  color: white;
+  font-weight: 700;
+}
+
+/* ============================= */
+/* Botón Ver/Descargar CV        */
+/* ============================= */
+#inicio .cv-btn-container {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+#inicio .cv-btn {
+  display: inline-block;
+  padding: 1.7rem 4rem;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  /* fondo semitransparente */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  transition: all 0.25s ease;
+  /* efecto glass suave */
+}
+
+#inicio .cv-btn:hover {
+  background: rgba(93, 226, 255, 0.15);
+  color: #5de2ff;
+  border-color: rgba(93, 226, 255, 0.4);
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  #inicio .cv-btn-container {
+    margin-top: 3rem;
+  }
+
+  #inicio .cv-btn {
+    padding: 1.2rem 3rem;
+    font-size: 1rem;
+  }
+}
+@media(max-width:500px){
+  #inicio .descripcion{
+    text-align: justify;
+  }
+}

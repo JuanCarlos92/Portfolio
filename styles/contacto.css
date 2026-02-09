@@ -1,0 +1,138 @@
+/* ============================= */
+/* Sección Contacto              */
+/* ============================= */
+#contacto {
+    background: #171717;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+/* ============================= */
+/* Título                        */
+/* ============================= */
+#contacto .titulo {
+    font-family: 'Inter Tight', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 900px) {
+    #contacto .titulo {
+        font-size: 32px;
+    }
+}
+
+/* ============================= */
+/* Contenedor del formulario     */
+/* ============================= */
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .nombre-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ============================= */
+/* Inputs y Textarea             */
+/* ============================= */
+#contacto input,
+#contacto textarea {
+    background-color: #292929;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.25s ease, box-shadow 0.25s ease;
+    resize: none;
+}
+
+/* Placeholder en italic */
+#contacto input::placeholder,
+#contacto textarea::placeholder {
+    font-style: italic;
+    color: #bbb;
+}
+
+@media (max-width: 900px) {
+
+    #contacto input,
+    #contacto textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Efecto al hacer focus */
+#contacto input:focus,
+#contacto textarea:focus {
+    border-color: #5de2ff;
+    box-shadow: 0 0 8px rgba(93, 226, 255, 0.4);
+    background-color: #3a3a3a;
+}
+
+#contacto .contenedor-form .nombre-email input {
+    width: 49%;
+}
+
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+/* ============================= */
+/* Botón enviar                  */
+/* ============================= */
+#contacto .btn-enviar {
+    margin-top: 2rem;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.1rem 3rem;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    transition: all 0.25s ease;
+}
+
+#contacto .btn-enviar:hover {
+    background: rgba(93, 226, 255, 0.15);
+    color: #5de2ff;
+    border-color: rgba(93, 226, 255, 0.4);
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+
+    /* Ajustar tamaño del botón */
+    #contacto .btn-enviar {
+        padding: 0.9rem 2.5rem;
+        font-size: 1rem;
+    }
+
+    #contacto .contenedor-form .nombre-email {
+        margin-bottom: 3px;
+        display: block;
+    }
+
+    #contacto .contenedor-form .nombre-email input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
