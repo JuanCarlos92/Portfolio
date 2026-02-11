@@ -1,5 +1,34 @@
 ---
-import ProyectosDestacadosSlider from "../components/ProyectosDestacadosSlide.jsx";
+import { proyectosDestacados } from "../data/proyectoDestacado.js";
+const proyecto = proyectosDestacados[0];
 ---
 
-<ProyectosDestacadosSlider client:load />
+<section id="proyectoDestacado">
+  <h3 class="titulo">Proyecto Destacado</h3>
+
+  <div class="contenido-proyecto">
+
+    <div class="card-proyecto">
+      <a href={proyecto.linkApp} target="_blank" class="card-link">
+        <div class="card-inner">
+          <img class="card-img" src={import.meta.env.BASE_URL + proyecto.imagen} alt={proyecto.nombre} />
+          <div class="card-overlay">
+            <h3>{proyecto.overlay.titulo}</h3>
+            <p>{proyecto.overlay.texto}</p>
+            <i class="fa-solid fa-up-right-from-square overlay-icon"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="texto-proyecto">
+      <h2>{proyecto.texto.titulo}</h2>
+      <div>
+        {proyecto.texto.parrafos.map(parrafo => (
+          <p set:html={parrafo}></p>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -8,6 +8,14 @@ export const proyectos = [
     linkRepo: "https://github.com/JuanCarlos92/TFG.git",
   },
   {
+    nombre: "Konki Burger",
+    tecnologias: "Next.js, React, TypeScript,Firebase Authentication, Firebase Hosting",
+    appImg: "./img/konki_burger.jpg",
+    repoImg: "./img/konki_burger.jpg",
+    linkApp: "https://miapp1.com",
+    linkRepo: "https://github.com/JuanCarlos92/konki-burger-app",
+  },
+  {
     nombre: "Agencia Viajes",
     tecnologias: "Spring Boot, Angular, PostgreSQL",
     appImg: "./img/AgenciaViajesSpring.png",
@@ -47,14 +55,7 @@ export const proyectos = [
     linkApp: "https://miapp1.com",
     linkRepo: "https://github.com/JuanCarlos92/AndroidJuego2D.git",
   },
-  {
-    nombre: "Proyecto JAXB",
-    tecnologias: "Java JAXB, XML",
-    appImg: "./img/MenuGestorlibrosXML.png",
-    repoImg: "./img/MenuGestorlibrosXML.png",
-    linkApp: "https://miapp1.com",
-    linkRepo: "https://github.com/JuanCarlos92/XML_JAVA.git",
-  },
+
   {
     nombre: "Proyecto Kotlin Compose",
     tecnologias: "Kotlin, Jetpack Compose",
