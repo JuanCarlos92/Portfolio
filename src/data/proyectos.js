@@ -3,7 +3,7 @@ export const proyectos = [
     nombre: "Wiki Monster Hunter",
     tecnologias: "Spring Boot, Angular, Ionic, MySQL, AWS, EC2, RDS, Cognito",
     appImg: "./img/mh_app.png",
-    repoImg: "./img/mh_repo.png",
+    repoImg: "./img/mh_repo2.png",
     linkApp: "https://tfg-juancarlosfilter.netlify.app/",
     linkRepo: "https://github.com/JuanCarlos92/TFG.git",
   },
@@ -17,7 +17,7 @@ export const proyectos = [
   },
   {
     nombre: "Agencia Viajes",
-    tecnologias: "Spring Boot, Angular, PostgreSQL",
+    tecnologias: "Spring Boot, Angular, MySQL",
     appImg: "./img/AgenciaViajesSpring.png",
     repoImg: "./img/AgenciaViajesSpring.png",
     linkApp: "https://miapp2.com",
