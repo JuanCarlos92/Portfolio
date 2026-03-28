@@ -12,7 +12,7 @@ export const proyectos = [
     tecnologias: "Next.js, React, TypeScript,Firebase Authentication, Firebase Hosting",
     appImg: "./img/konki_burger.jpg",
     repoImg: "./img/konki_burger.jpg",
-    linkApp: "https://miapp1.com",
+    linkApp: "https://konkiburger.jcfilter.dev/",
     linkRepo: "https://github.com/JuanCarlos92/konki-burger-app",
   },
   {
@@ -40,12 +40,12 @@ export const proyectos = [
     linkRepo: "https://github.com/JuanCarlos92/ChatSocket.git",
   },
   {
-    nombre: "Proyecto JDBC",
-    tecnologias: "Java JDBC, MySQL",
-    appImg: "./img/ProyectAdd_U2.png",
-    repoImg: "./img/ProyectAdd_U2.png",
+    nombre: "Aplicación Reparto",
+    tecnologias: "Spring Boot, Flutter",
+    appImg: "./img/app_reparto.png",
+    repoImg: "./img/app_reparto.png",
     linkApp: "https://miapp1.com",
-    linkRepo: "https://github.com/JuanCarlos92/JDBC_JAVA.git",
+    linkRepo: "https://github.com/JuanCarlos92/App_reparto_Spring_Flutter.git",
   },
   {
     nombre: "Juego 2D Android",
