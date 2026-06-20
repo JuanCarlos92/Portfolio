@@ -1,6 +1,6 @@
 export const proyectos = [
   {
-    nombre: "Wiki Monster Hunter",
+    nombre: "TFG",
     tecnologias: "Spring Boot, Angular, Ionic, MySQL, AWS, EC2, RDS, Cognito",
     appImg: "./img/mh_app.png",
     repoImg: "./img/mh_repo2.png",
@@ -32,7 +32,7 @@ export const proyectos = [
     linkRepo: "https://github.com/JuanCarlos92/Hibernate.git",
   },
   {
-    nombre: "Chat con socket Cliente - Servidor",
+    nombre: "Chat Cliente - Servidor",
     tecnologias: "Socket Java servidor y cliente Android",
     appImg: "./img/ChatSocket.png",
     repoImg: "./img/ChatSocket.png",
@@ -57,7 +57,7 @@ export const proyectos = [
   },
 
   {
-    nombre: "Proyecto Kotlin Compose",
+    nombre: "Kotlin Compose",
     tecnologias: "Kotlin, Jetpack Compose",
     appImg: "./img/kotlinListaCompra.png",
     repoImg: "./img/kotlinListaCompra.png",

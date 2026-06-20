@@ -1,18 +1,18 @@
 export const proyectosDestacados = [
   {
-    nombre: "Wiki Monster Hunter",
+    nombre: "TFG",
     linkApp: "https://tfg-juancarlosfilter.netlify.app",
     imagen: "img/mh-web.png",
 
     overlay: {
-      titulo: "Wiki Monster Hunter",
+      titulo: "TFG",
       texto: "Ver página web"
     },
 
     texto: {
-      titulo: "Wiki Colaborativa",
+      titulo: "TFG",
       parrafos: [
-        `Proyecto <span>wiki</span> de <span>Monster Hunter</span> con un backend en <span>Spring Boot</span>, microservicios y APIs REST seguras.<br>
+        `Proyecto <span>de una wikipedia</span> con un backend en <span>Spring Boot</span>, microservicios y APIs REST seguras.<br>
         El frontend está desarrollado en <span>Angular</span> con <span>Ionic</span>, utilizando <span>TypeScript</span> y componentes reutilizables.<br> 
         La aplicación implementa autenticación y separación de lógica mediante <span>DTOs</span>.`,
 
